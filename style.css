@@ -46,14 +46,10 @@ section {
   /* 1 */
   #one {
       display: flex;
- 
       /* 2. */
-      justify-content: flex-end;
-      
+      justify-content: flex-end;  
       /* 3. */
-      flex-direction: column;
-
-      
+      flex-direction: column;  
       /* 4. */
       align-items: center; 
   } 
@@ -80,22 +76,21 @@ section {
   flex-direction: column-reverse;
 }
 
-/* 2. */
+/* 2. 3.` */
 #orange{
   order: 2;
 }
+
 #purple {
   order: 3;
   position: relative;
-  bottom: -152px;
-  
-}
- #brown {
-  order: 1;
-  position: relative;
-  top: -152px;
+  align-self: flex-end;
 }
 
+ #brown {
+  order: 1;
+  align-self: flex-start;
+}
 
 
  
